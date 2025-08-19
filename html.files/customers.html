@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MWF Sales Page</title>
+ <link rel="stylesheet" href="../CSS-/style.css">
+</head>
+<body>
+  <header>
+    <h1>Mayondo Wood and Furniture Ltd</h1>
+    <p>Sales Recording</p>
+  </header>
+
+  <nav>
+  
+    <a href="dashboard.html">Dashboard</a>
+     <a href="stock.html">Stock</a>
+    <a href="sales.html">Sales</a>
+    <a href="customers.html">Customers</a>
+    <a href="inventory.html">Inventory</a>
+  </nav>
+
+  <div class="container">
+    <div class="form-section">
+      <h2>Record a Sale</h2>
+      <form id="salesForm">
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" required>
+
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" required>
+
+        <label for="productType">Product Type:</label>
+        <select id="productType" required>
+          <option value="wood">Wood</option>
+          <option value="furniture">Furniture</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" required>
+
+        <label for="pricePerItem">Selling Price (UGX):</label>
+        <input type="number" id="pricePerItem" required>
+
+        <label for="transport">Include Transport?</label>
+        <select id="transport" required>
+          <option value="no">No</option>
+          <option value="yes">Yes (Add 5%)</option>
+        </select>
+
+        <label for="paymentType">Payment Type:</label>
+        <select id="paymentType" required>
+          <option value="cash">Cash</option>
+          <option value="cheque">Cheque</option>
+          <option value="bank overdraft">Bank Overdraft</option>
+        </select>
+
+        <label for="salesAgent">Sales Agent Name:</label>
+        <input type="text" id="salesAgent" required>
+
+        <label for="saleDate">Sale Date:</label>
+        <input type="date" id="saleDate" required>
+
+        <p class="total-amount">Total Price: <span id="totalDisplay">UGX 0</span></p>
+
+        <button type="submit">Save Sale</button>
+      </form>
+    </div>
+ </head>
+ <body>
+ 
+   <h1>Mayondo Wood and Furniture - Product List</h1>
+   <h2>Customer Product Orders</h2>
+ 
+
+ </body>
+ </html>
+ 
+</body>
+</html>

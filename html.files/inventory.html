@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & Register - Mayondo Wood and Furniture</title>
+  <link rel="stylesheet" href="../CSS-/style.css">
+
+   <style>
+    .product-table {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .product-table thead {
+      background-color: hsl(135, 18%, 96%);
+      color: rgb(73, 8, 252);
+    }
+
+    .product-table th,
+    .product-table td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .product-table tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .status-available {
+      color: green;
+      font-weight: bold;
+    }
+
+    .status-low {
+      color: orange;
+      font-weight: bold;
+    }
+
+    .status-out {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+    <h1>Mayondo Wood and Furniture - Product List</h1>
+  <nav>
+  <a href="dashboard.html">Dashboard</a>
+    <a href="stock.html">Stock</a>
+    <a href="sales.html">Sales</a>
+    <a href="customers.html">Customers</a>
+    <a href="inventory.html">Inventory</a>
+    <a href="logout.html">logout</a>
+  </nav>
+  <main>
+  <!-- Finances Section -->
+  <section id="finances" class="card">
+    <h2>Finances</h2>
+    <table>
+      <tr><th>Month</th><th>Income</th><th>Expenses</th><th>Profit</th></tr>
+      <tr><td>June</td><td>3,200,000 UGX</td><td>1,700,000 UGX</td><td>1,500,000 UGX</td></tr>
+      <tr><td>July</td><td>4,000,000 UGX</td><td>2,000,000 UGX</td><td>2,000,000 UGX</td></tr>
+      <tr><td>August</td><td>3,500,000 UGX</td><td>1,800,000 UGX</td><td>1,700,000 UGX</td></tr>
+    </table>
+  </section>
+
+  <!-- Stock Section -->
+  <section id="stock" class="card">
+    <h2>Stock</h2>
+    <table>
+      <tr><th>Product</th><th>Quantity</th><th>Status</th></tr>
+      <tr><td>Wood (Timber)</td><td>120 Units</td><td>Available</td></tr>
+      <tr><td>Nails</td><td>800</td><td>Low</td></tr>
+      <tr><td>Varnish</td><td>20 Litres</td><td>Available</td></tr>
+      <tr><td>Hammer</td><td>15</td><td>Available</td></tr>
+      <tr><td>Screws</td><td>600</td><td>Available</td></tr>
+    </table>
+  </section>a>
+
+  <!-- Sales Section -->
+  <section id="sales" class="card">
+    <h2>Sales</h2>
+    <table>
+      <tr><th>Date</th><th>Product</th><th>Quantity</th><th>Total Sale</th></tr>
+      <tr><td>12 Aug 2025</td><td>Bed</td><td>2</td><td>700,000 UGX</td></tr>
+      <tr><td>14 Aug 2025</td><td>Wardrobe</td><td>1</td><td>450,000 UGX</td></tr>
+      <tr><td>15 Aug 2025</td><td>Dining Table</td><td>3</td><td>900,000 UGX</td></tr>
+      <tr><td>16 Aug 2025</td><td>Sofa Set</td><td>1</td><td>1,200,000 UGX</td></tr>
+    </table>
+  </section>
+
+  <!-- Customers Section -->
+  <section id="customers" class="card">
+    <h2>Customers</h2>
+    <table>
+      <tr><th>Customer Name</th><th>Contact</th><th>Order</th></tr>
+      <tr><td>Frank Tumulidde</td><td>+256703450020</td><td>Dining Table</td></tr>
+      <tr><td>Jane Bukenya</td><td>+256700876120</td><td>Wardrobe</td></tr>
+      <tr><td>Michael Onyango</td><td>+256753400030</td><td>Office Desk</td></tr>
+      <tr><td>Margret Namatovu</td><td>+256770901246</td><td>Bed</td></tr>
+      <tr><td>David Ochieng</td><td>+256774500999</td><td>TV Stand</td></tr>
+      <tr><td>Aisha Nalubega</td><td>+256750000939</td><td>Kitchen Cabinet</td></tr>
+      <tr><td>Peter Kato</td><td>+256767543007</td><td>Coffee Table</td></tr>
+      <tr><td>Grace Nakato</td><td>+256700544067</td><td>Sofa Set</td></tr>
+    </table>
+  </section>
+
+  <!-- Inputs Section -->
+  <section id="inputs" class="card">
+    <h2>Inputs</h2>
+    <table>
+      <tr><th>Material</th><th>Quantity</th><th>Supplier</th></tr>
+      <tr><td>Wood</td><td>50 Units</td><td>Supplier A</td></tr>
+      <tr><td>Nails</td><td>1000</td><td>Supplier B</td></tr>
+      <tr><td>Varnish</td><td>10 Litres</td><td>Supplier C</td></tr>
+    </table>
+  </section>
+
+  <!-- Outputs Section -->
+  <section id="outputs" class="card">
+    <h2>Outputs</h2>
+    <table>
+      <tr><th>Product</th><th>Quantity</th><th>Delivered To</th></tr>
+      <tr><td>Wardrobe</td><td>5</td><td>Jane Bukenya</td></tr>
+      <tr><td>Bed</td><td>3</td><td>Margret Namatovu</td></tr>
+      <tr><td>Dining Table</td><td>2</td><td>Frank Tumulidde</td></tr>
+    </table>
+  </section>
+</main>
+  
+  <script src="../scripts.js/inventory.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MWF Stock Management</title>
+  <link rel="stylesheet" href="../CSS-/style.css">
+</head>
+<body>
+  <header>
+    <h1>Mayondo Wood and Furniture Ltd</h1>
+    <p>Stock Management</p>
+  </header>
+
+  <nav>
+    
+    <a href="dashboard.html">Dashboard</a>
+    <a href="stock.html">Stock</a>
+    <a href="sales.html">Sales</a>
+    <a href="customers.html">Customers</a>
+    <a href="inventory.html">Inventory</a>
+  </nav>
+
+  <div class="container">
+    <div class="form-section">
+      <h2>Add New Product to Stock</h2>
+      <form id="stockForm">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" name="productName" required>
+
+        <label for="productType">Product Type:</label>
+        <select id="productType" name="productType" required>
+          <option value="wood">Wood</option>
+          <option value="furniture">Furniture</option>
+        </select>
+
+        <label for="costPrice">Cost Price:</label>
+        <input type="number" id="costPrice" name="costPrice" required>
+
+        <label for="sellingPrice">Selling Price:</label>
+        <input type="number" id="sellingPrice" name="sellingPrice" required>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required>
+
+        <label for="supplierName">Supplier Name:</label>
+        <input type="text" id="supplierName" name="supplierName" required>
+
+        <label for="quality">Quality:</label>
+        <input type="text" id="quality" name="quality">
+
+        <label for="color">Color (optional):</label>
+        <input type="text" id="color" name="color">
+
+        <label for="measurements">Measurements (optional):</label>
+        <input type="text" id="measurements" name="measurements">
+
+        <label for="dateAdded">Date Added:</label>
+        <input type="date" id="dateAdded" name="dateAdded" required>
+
+        <button type="submit">Add to Stock</button>
+      </form>
+    </div>
+  </div>
+<script src="scripts.js/sales.js"></script>
+</body>
+</html>
