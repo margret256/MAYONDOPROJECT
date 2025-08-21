@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login & Register - Mayondo Wood and Furniture</title>
   <link rel="stylesheet" href="CSS/bootstrap-5.3.7-dist/css/bootstrap.css">
   <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
 
   <nav class="navbar">
@@ -18,13 +16,13 @@
     </header>
     <ul>
       <li><a href="index.html">Login</a></li>
-      <li><a href="dashboard.html">Dashboard</a></li>
+       
     </ul>
   </nav>
 
   <div class="container">
     <h2>Login / Register</h2>
-    <form id="authForm">
+    <form id="loginForm">
       <label for="username">Username</label>
       <input type="text" id="username" required>
 
@@ -37,8 +35,8 @@
         <option value="employee">Employee</option>
       </select>
 
-      <a href="dashboard.html" class="btn btn- primary">Login</a>
-
+      <button type="submit" class="btn btn-primary w-100">LOGIN</button>
+      
       <p style="text-align:center;">Don't have an account? <a href="#" onclick="showRegister()">Register Here</a></p>
     </form>
 
@@ -59,14 +57,13 @@
       <select id="registerRole">
         <option value="manager">Manager</option>
         <option value="employee">Employee</option>
-      </select>
+      </select> 
 
       <button type="button" onclick="registerUser()">Register</button>
       <p style="text-align:center;">Already have an account? <a href="#" onclick="showLogin()">Back to Login</a></p>
     </form>
   </div>
   <script src="CSS/bootstrap-5.3.7-dist/js/bootstrap.js"></script>
-  <script src="scripts.js/index.js"></script>
+<script src="scripts.js/index.js"></script>
 </body>
-
 </html>
