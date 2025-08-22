@@ -1,4 +1,4 @@
-const authForm = document.getElementById("authForm");
+const authForm = document.getElementById("loginForm");
 const registerForm = document.getElementById("registerForm");
 
 function showRegister() {
@@ -7,8 +7,8 @@ function showRegister() {
 }
 
 function showLogin() {
-  registerForm.style.display = 'none';
-  authForm.style.display = 'block';
+  registerForm.style.display = "none";
+  authForm.style.display = "block";
 
   window.location.href = "dashboard.html";
 }
@@ -23,22 +23,18 @@ authForm.addEventListener("submit", function (e) {
   e.preventDefault();
   const role = document.getElementById("loginRole").value;
   if (role === "manager") {
-    window.location.href = "manager-dashboard.html";
+    window.location.href = "dashboard.html";
   } else if (role === "employee") {
-    window.location.href = "employee-dashboard.html";
-  } else {
-    window.location.href = "customer-dashboard.html";
+    window.location.href = "dashboard.html";
   }
 });
 
 function redirectToRole() {
   const role = document.getElementById("login-role").value;
   if (role === "manager") {
-    window.location.href = "manager-dashboard.html";
+    window.location.href = "dashboard.html";
   } else if (role === "employee") {
-    window.location.href = "employee-dashboard.html";
-  } else if (role === "customer") {
-    window.location.href = "customer-dashboard.html";
+    window.location.href = "dashboard.html";
   } else {
     alert("Please select a role.");
     return false;
